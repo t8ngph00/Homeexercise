@@ -10,16 +10,20 @@
 class teacher extends Persons
 {
 
-    function __construct()
-    {
-
-    }
-
-  private $vacancy;
+    
+  
 
   private $teachingSubjects=array();
 
   private $department;
+  function __construct($firstName, $lastName, $yearOfBirth, $teachingSubjects, $department)
+    {
+        $this->setfirstName($firstName);
+        $this->setlastName($lastName);
+        $this->setyearOfBirth($yearOfBirth);
+        $this->teachingSubjects = $teachingSubjects;
+        $this->department = $department;
+    }
 
 
     public function getteachingSubjects()

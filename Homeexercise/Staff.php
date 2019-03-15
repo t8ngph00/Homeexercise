@@ -4,13 +4,15 @@
 class Staff extends Persons
 {
 
-    function __construct()
-    {
-
-    }
 
   private $vacancy;
-
+  function __construct($firstName, $lastName, $yearOfBirth, $vacancy)
+  {
+      $this->setfirstName($firstName);
+      $this->setlastName($lastName);
+      $this->setyearOfBirth($yearOfBirth);
+      $this->vacancy = $vacancy;
+  }
 
 
   

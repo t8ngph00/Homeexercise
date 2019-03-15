@@ -1,11 +1,18 @@
 <?php
 
-
 abstract class Persons
 {
+
 private $firstName;
 private $lastName;
 private $yearOfBirth;
+
+public function __construct($firstName, $lastName, $yearOfBirth) {
+    $this->firstName = $firstName;
+    $this->lastName = $lastName;
+    $this->yearOfBirth = $yearOfBirth;
+}
+
 
 public function setfirstName($value)
 {
